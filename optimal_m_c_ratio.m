@@ -5,7 +5,7 @@ clc
 set(groot,'defaulttextinterpreter','latex');
 set(groot, 'defaultAxesTickLabelInterpreter','latex');
 set(groot, 'defaultLegendInterpreter','latex');
-set(groot, 'defaultAxesFontSize',16);
+set(groot, 'defaultAxesFontSize',15);
 
 ratio = linspace(0,4,1000);
 
@@ -28,10 +28,10 @@ end
 
 
 
-plot(ratio,m_c,'LineWidth',1.5,'Color','k')
+plot(ratio,m_c,'LineWidth',1.5)
 grid on
-xlabel('$\sigma_v/\sigma_w$')
-ylabel('$m_c$')
+xlabel('Ratio, $\sigma_v/\sigma_w$')
+ylabel('Characteristic timescale, $m_c$')
 
 function e = f(m,r)
 e = ((2*m^2-3*m+1)/(6*m)) + (1/m)*(r^2); 
