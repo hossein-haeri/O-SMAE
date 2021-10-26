@@ -23,6 +23,15 @@ avar = AVAR(y,taus);
 m_c_hat = taus(ind);
 x_hat = SMAE(y,m_c_hat);
 
+
+
+
+set(groot,'defaulttextinterpreter','latex');
+set(groot, 'defaultAxesTickLabelInterpreter','latex');
+set(groot, 'defaultLegendInterpreter','latex');
+set(groot, 'defaultAxesFontSize',15);
+
+
 subplot(2,1,1)
     loglog(avar,'Color',[0.2,0.2,0.2])
     xlabel('Window length, $m$')
